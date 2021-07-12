@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}预备知识}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}杨辉三角}{4}{subsection.1.1}%
+\contentsline {section}{\numberline {2}二元系数组}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}引入}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}二元系数组的运算性质}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}系数阵}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}定义}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}系数阵的运算}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}习题}{8}{subsection.3.3}%
+\contentsline {section}{\numberline {4}均值不等式的系数阵表达}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}简单的均值不等式}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}$ (a-b)^{2n} $结构}{15}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}习题}{15}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Schur不等式}{20}{section.5}%
+\contentsline {subsection}{\numberline {5.1}习题}{24}{subsection.5.1}%
+\contentsline {section}{\numberline {6}一些问题}{24}{section.6}%
+\contentsline {subsection}{\numberline {6.1}}{24}{subsection.6.1}%
