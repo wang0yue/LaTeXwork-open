@@ -1,0 +1,1113 @@
+\documentclass[UTF8]{ctexart}
+%宏包：
+\usepackage{abstract}
+\usepackage{lettrine}
+\usepackage{multicol}
+\usepackage{cite}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{diagbox}
+\usepackage{makecell}
+\usepackage{placeins}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{amssymb}
+
+\begin{document}
+
+%封面
+\title{数学公式$2.2$}
+\author{浩于长空}
+
+%\date{}
+
+\maketitle
+
+\begin{displaymath}
+\end{displaymath}
+
+\begin{abstract}
+这是我小学和初中写在小本本上的没用的公式的电子版。
+\end{abstract}
+
+\newpage
+
+\textbf{随便写写}\\
+
+*这份笔记的内容暂仅供同行学习交流使用。\\
+
+*这份笔记作为一份知识总结，没有在问题的引入和背景介绍方面下多少功夫，因此并不适合于初学者用于学习新知识。\\
+
+*QQ群555658600可以算是我的“读者群”，我整理的很多资料都会在那里发布。欢迎学生老师同行进群，进群可查看本书最新进度和勘误，也可以上报错误，讨论数学，获取资料等。这份笔记目前没有成书之日，也没有什么计划之类，受限于自己的数学能力和学习闲暇，不定期的更新而已，欢迎大佬们提意见（或者我没有写到的范围）\\
+
+*2.2版本是我的一个阶段整理，因为2.0.0至2.1版中由于校对机制并不完善，出现大量内容、排版错误，我们在2.1版本及时修复。同时，以后我也会先再三校对，尽可能的减少错误，再去公开，避免初学者产生误解。
+\\
+
+*身为一个高中生更不可能做到完美的统筹兼顾，本人虽力求完美，但由于本人水平有限（虽然已经高一了但还是小学二年级水平），由于时间仓促（大部分时间被关在小黑屋，且周末贪玩），虽经努力，但选材和释文可能也有疏漏和不当之处（另一方面读者应该学会如何自动纠正笔误），还望批评指正。
+
+受时间限制我可能不会再频繁更新了，下一次更新不知道是啥时候，后续还有手写版的没码的也可以看扫描版，我写出这个的初衷首先是取悦自己，顺便给偌大的数学文件宝库奉上自己一点微薄的贡献，以后这里面的内容会越来越杂……
+\\
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{代数} 
+\subsection{常数值}
+\subsubsection{倒数，二次根式，二根倒数表}
+
+
+    \begin{table}[H]
+    \begin{tabular}{|l|l|l|l|c|l|l|l|}
+\hline
+n & $\frac{1}{n}$ & $\sqrt{n}$ & $\frac{1}{\sqrt{n}}$ & n & $\frac{1}{n}$ & $\sqrt{n}$ &
+$\frac{1}{\sqrt{n}}$ \\ \hline
+1 & 1 & 1 & 1 & 7 & 0.143 & 2.646 & 0.378 \\ \cline{1-1} \cline{5-5}
+2 & 0.5 & 1.414 & 0.707 & 8 & 0.125 & 2.828 & 0.354 \\ \cline{1-1} \cline{5-5}
+3 & 0.333 & 1.732 & 0.577 & 9 & 0.111 & 3 & 0.333 \\ \cline{1-1} \cline{5-5}
+4 & 0.25 & 2 & 0.5 & 10 & 0.1 & 3.162 & 0.316 \\ \cline{1-1} \cline{5-5}
+5 & 0.2 & 2.236 & 0.447 & $\pi$ & 0.318 & 1.772 & 0.564 \\ \cline{1-1} \cline{5-5}
+6 & 0.167 & 2.449     & 0.408       & e  & 0.368 & 1.649     & 0.607       \\ \hline
+\end{tabular}
+\end{table}
+
+\subsubsection{$\pi$和e}
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|}
+\hline
+$\frac{\pi }{2} =1.57079633$ & $\pi^2=9.8696044$  & $log \pi =0.49714987$ \\ \hline
+$\frac{\pi }{3} =1.04719755$ & $\frac{\pi^2}{4}=2.4674011$  & $e=2.71828183$ \\ \hline
+$\frac{\pi }{4} =0.78539816$ & $\sqrt[3]{\pi}=1.46459189$ & $e^2=7.3890561$  \\ \hline
+$\frac{4\pi }{3} =4.1887902$ & $\ln_{}{\pi} =1.14472989$ & $\frac{1}{e}=0.3678794$ \\ \hline
+\end{tabular}
+\end{table}
+
+\subsubsection{$\pi$的值与e的值}
+
+$\pi$ =3.14159 26535 89793 23846 26433 
+83279 50288 41971 69399 37510 
+58209 74944 59230 78164 06286 
+20899 86280 34825 34211 70679 
+
+e=2.71828 18284 59045 23536 02874
+71352 66249 77572 47093 69995 
+95749 66967 62772 40766 30353 
+54759 45713 82178 52516 64274 
+
+\subsection{数的分类}
+
+\subsection{计算法则}
+
+\subsubsection{加减}
+
+$a+b=b+a$ 
+
+$(a+b)+c=a+(b+c)$
+
+$a-b-c=a-c-b=a-(b+c)$
+
+\subsubsection{乘除}
+
+$a \times b=b \times a$
+
+$a \times b \times c=a \times \left( b \times c \left) = \left( a \times c \left) \times b\right.
+\right. \right. \right. $
+
+
+$\left( a+b \left)  \times c=a \times c+b \times c\right. \right.$ \\
+
+$\left( a-b \left)  \times c=a \times c-b \times c\right. \right. $
+
+$a \div b= \left( a \times c \left)  \div  \left( b \times c \right) \right. \right. $
+
+$a \div b= \left( a \div c \left)  \div  \left( b \div c \right) \right. \right. $
+
+\subsubsection{等式的性质}
+
+$a+c=b+c$
+
+$a-c=b-c$
+
+$a \times c=b \times c$
+
+$a \div c=b \div c \left( c \neq 0 \right)$
+
+若$a=b$,则$\mathop{{{a}}}\nolimits^{{c}}=\mathop{{{b}}}\nolimits^{{c}}$,$\sqrt[{c}]{{a}}=\sqrt[{c}]{{b}}$
+
+\subsubsection{幂}
+
+\begin{table}[H]
+\begin{tabular}{lllll}
+$a^ma^n=a^{m+n}$ & $\frac{a^m}{a^n}=a^{m-n}(a\ne 0)$ & $(a^m)^n=(a^n)^m=a^{mn}$ & $(ab)^n=a^nb^n$
+\\
+$(\frac{a}{b})^n=\frac{a^n}{b^n}(b\ne 0)$ & $a^0=1(a\ne 0)$ & $0^n=0(n>0)$ &
+$a^{-p}=\frac{1}{a^p}(a\ne 0)$ & $a^{\frac{n}{m}}=\sqrt[m]{a^n}$
+\end{tabular}
+\end{table}
+
+\noindent$(-a)^n =
+\begin{cases} 
+a^n,  & \mbox{if }\mbox{ $a> 0,n=2k $ （$k \in \mathbb{Z}$）} \\
+-a^n, & \mbox{if }\mbox{ $a> 0,n=2k+1$（$k \in \mathbb{Z}$）}
+\end{cases}$
+
+\subsubsection{根号}
+
+在$\sqrt{a}$中,$a \geq 0,\sqrt{a} \geq 0$
+
+\begin{table}[H]
+\begin{tabular}{llll}
+$\sqrt{0}=\sqrt[3]{0}=0$ & $\sqrt{a^2}=\left|a \right|$ & $(\sqrt{a})^2=a(a \geq 0)$ &
+$\sqrt{a}\sqrt{b}=\sqrt{ab}(a \geq 0,b \geq 0)$ \\
+$\sqrt{\frac{a}{b}}=\frac{\sqrt{a}}{\sqrt{b}}(a\ge 0,b> 0)$ & $\sqrt[3]{-a}=-\sqrt[3]{a}$ &
+$\sqrt[3]{a^3}=(\sqrt[3]{a})^3=a$ & $\sqrt[3]{a}\sqrt[3]{b}=\sqrt[3]{ab}$
+\end{tabular}
+\end{table}
+
+注意：$\sqrt{9a^6}=\left|3a^3 \right|$,只要未知数的指数为偶数，都要考虑它的正负性
+
+\subsubsection{非负三宝}
+
+$a^2\geq 0,\left|a \right|\geq 0,\sqrt{a}\geq 0$
+
+\subsubsection{比例的基础性质}
+
+若$\frac{a}{b}=\frac{c}{d}=\cdots=\frac{m}{n}$,则$\frac{a+c+\cdots+m}{b+d+\cdots+n}=\frac{a}{b}=\frac{c}{d}=\cdots=\frac{m}{n}$
+
+\subsubsection{单位分数}分子为$1$的分数相加，公式如下
+
+若没有达到要求，继续重复
+
+\noindent若$b÷a=w\cdots \cdots r$,则$\frac{a}{b}=\frac{1}{w+1}+\frac{a-r}{(w+1)b}$
+
+
+\subsection{对数}
+
+1.若$a^{n} =b(a> 0$且$a\ne 1,b> 0)$，则n叫做以a为底b的对数，记为$\log_{a}{b}=n$，
+
+例如：$  \because 3^4=81 \therefore \log_{3}{81}=4 $
+
+2.基础公式
+
+$ \log_{a}{1}=0 \quad \log_{a}{a}=1 \quad \ln_{}{1} =0\quad \ln_{}{e} =1\quad \ln_{}{e^{n} } =n
+\quad e^{\ln_{}{a} } =a$
+
+$e=\lim\limits_{n \to \infty} (1+\frac{1}{n} )^{n} =\lim\limits_{n \to \infty} (\frac{2n+1}{2n-1} )^{n}
+=\frac{1}{0!} +\frac{1}{1!} +\frac{1}{2!} +\frac{1}{3!} +\cdots$
+
+3.化简公式
+
+$\log_{a}{xy} =\log_{a}{x}+\log_{a}{y}  $
+\qquad $\log_{a}{\frac{x}{y} } =\log_{a}{x} -\log_{a}{y}$ 
+\qquad $\log_{a}{x^{b} } =b\log_{a}{x} \qquad a^{\log_{a}{x} } =x$ 
+
+$\lg_{}{x^{a} } =a\lg_{}{\left | x \right | }$ （$a=2k$ ，$k \in \mathbb{Z}$）
+
+换底公式：$\log_{a}{b} =\frac{1}{\log_{b}{a} } =\frac{\log_{c}{b} }{\log_{c}{a} } $
+
+特殊公式：$ \frac{\lg_{}{(\frac{m+1}{m} )^m} }{\lg_{}{(\frac{m+1}{m} )^{m+1}} }=\frac{(\frac{m+1}{m}
+)^m}{(\frac{m+1}{m} )^{m+1}} $
+
+4.本福德定律
+
+数字$n$作为首位数出现的概率为$\log_{10}{(1+\frac{1}{n}) } $
+
+在$b$进制下数码n作为首位出现的概率为$\log_{b}{(1+\frac{1}{n}) } $
+
+
+\subsection{不知道什么标题}
+
+\subsubsection{等式}
+
+$3^3+4^3+5^3=6^3$
+
+$10^2+11^2+12^2=13^2+14^2$
+
+$30^4+120^4+272^4+315^4=353^4$
+
+$27^5+84^5+110^5+133^5=144^5=61 917 364 224$
+
+$95800^4+217519^4+414560^4=422 481^4$
+
+$1729=12^3+1^3=9^3+10^3$（拉马努金）
+
+$635318657=158^4+59^4=134^4+133^4$
+
+\subsubsection{《百鸟归朝图》}
+
+$1\times2+3\times4+5\times6+7\times8=100$
+
+\subsubsection{质数}
+前$n$个质数和为最小的完全平方数（共9个数）
+
+\noindent$ 2+3+5+7+11+13+17+19+23=100=10^2 $
+
+\subsubsection{生日问题}n个人中至少有两人同日过生日的概率
+
+$P_{(23)}=1-\frac{365\times 364\times 363\times ...\times 343}{365^{23} }  \approx 0.507$
+
+$P_{(10)}=1-\frac{365\times 364\times 363\times ...\times 356}{365^{10} }  \approx 0.117$
+
+\subsubsection{钟表}时针和分针的夹角为
+
+$180^{\circ}-\left | 180^{\circ}-\left | 5.5m-30h \right |^{\circ}  \right | $
+
+\subsubsection{大写数字}
+
+零 壹	贰	叁	肆	伍	陆	柒	捌  玖  零  拾  佰  仟  万  亿  兆
+
+\subsubsection{奇偶}
+
+一、$(2n+1)^2=4n(n+1)+1(n \in \mathbb{Z})$说明：
+偶数的平方能被4整除，奇数的平方被4除余1，被8除余1。
+
+二、设$m$是整数，则$m,\left | m \right | ,m^{n} (n\in \mathbb{Z})$的奇偶性相同。
+
+\subsubsection{纸张大小}
+
+
+\begin{table}[H]
+\begin{tabular}{|l|lllllllll|}
+\hline
+制 & \multicolumn{1}{l|}{$A_{0}$} & \multicolumn{1}{l|}{$A_{1}$} & \multicolumn{1}{l|}{$A_{2}$} &
+\multicolumn{1}{l|}{$A_{3}$} & \multicolumn{1}{l|}{$A_{4}$} & \multicolumn{1}{l|}{$A_{5}$} &
+\multicolumn{1}{l|}{$A_{6}$} & \multicolumn{1}{l|}{$A_{7}$} & $A _{8}$ \\ \hline
+长($mm$) & 1189 & 841 & 594 & 420 & 297 & 210 & 148 & 105 & 74 \\
+宽($mm$) & 841 & 594 & 420 & 297 & 210 & 148 & 105 & 74 & 52 \\
+面积($cm^2$) & $9999.49 $ & $4995.54 $ & $2494.8 $ & $ 1247.4 $ & $ 623.7 $ & $310.8 $ & $155.4 $ &
+$77.7 $ & $38.48 $\\ \hline
+\end{tabular}
+\end{table}
+
+\subsubsection{}
+
+注意$n^2$是多项式，而$10^n$是指数
+
+\subsection{数列}
+
+\subsubsection{等差数列}
+
+${a_{1},a_{1}+d, a_{1}+2d,\cdots,a_{1}+nd}$
+
+$A_{n}$通项$=(n-1)d+a_{1}$
+
+$d$公差$=A_{n+1}-A_{n}$
+
+$P_{n}$项数$=\frac{a_{n}-a_{1}}{d} +1$
+
+$S_{n}$前$n$项的和$=\frac{(a_{1}+a_{n})P_{n}}{2} $
+
+\subsubsection{等比数列}
+
+${a_{1},a_{1}q^2,a_{1}q^3,\cdots ,a_{1}q^n}$($ q \ne 1$)
+
+$q$公比$=\frac{a_{n+1} }{a_{n}} $
+
+$a_{n}=a_{1}q^{n-1}$
+
+$S_{n}$前$n$项的和$=\frac{a_{1}(1-q^n) }{1-q}$ 
+
+\subsubsection{三角形数列}
+
+${1,4,10,20,\cdots }$
+
+$A_{n}-A_{n-1}=n$
+
+$A_{n}=\displaystyle \sum_{i=1}^{n}i =\frac{n(n+1)}{2} $
+
+$S_{n}=1+3+6+10+\cdots+A_{n}=\frac{1}{6}n(n+1)(n+2)=\frac{1}{6}(n^3+3n^2+2n) $
+
+\subsubsection{幂和形数列}
+
+$\displaystyle \sum_{i=1}^{n} i=\frac{n(n+1)}{2} $
+
+$\displaystyle \sum_{i=1}^{n} i^2=\frac{1}{6} n(n+1)(2n+1)$
+
+$\displaystyle \sum_{i=1}^{n} i^3=(\sum_{i=1}^{n} i)^2=\frac{1}{4} n^2(n+1)^2=\left [
+\frac{n(n+1)}{2} \right ] ^2$
+
+$\displaystyle \sum_{i=1}^{n} i^4=\frac{1}{30} n(n+1)(2n+1)(3n^2+3n-1)$
+
+$\displaystyle \sum_{i=1}^{n} i^5=\frac{1}{12} n^2(n+1)^2(2n^2+2n-1)$
+
+$\displaystyle \sum_{i=1}^{n} i^6=\frac{1}{42} n(n+1)(2n+1)(3n^4+6n^3-3n+1)$
+
+$\displaystyle \sum_{i=1}^{n} i^7=\frac{1}{24} n^2(n+1)^2(3n^4+6n^3-n^2-4n+2)$
+
+\subsubsection{特殊幂和形数列}
+
+$\displaystyle \sum_{i=1}^{n}2i-1=n^2 $
+
+$\displaystyle \sum_{i=1}^{n}2i=n(n+1)$
+
+$\displaystyle \sum_{i=1}^{n}(2i-1)^2=\frac{1}{3} n(4n^2-1)$
+
+$\displaystyle \sum_{i=1}^{n}(2i-1)^3=n^2(2n^2-1)$
+
+$\displaystyle \sum_{i=1}^{n}(-1)^{i-1}i^2=\frac{1}{2} (-1)^{n-1}n(n+1) $
+
+$\displaystyle \sum_{i=1}^{n}(-1)^{i-1}i^3=
+\begin{cases} \text {当}n=2k\text {时},-\frac{1}{4} n^2(2n+3)
+ \\
+\text {当}n=2k+1\text {时},\frac{1}{4} (2n-1)(n+1)^2
+\end{cases}$
+
+$\displaystyle \sum_{i=1}^{n}(-1)^{i-1}i^4=\frac{1}{2} (-1)^{n-1}n(n+1)(n^2+n+1)$
+
+\subsubsection{一阶线性递推数列}
+
+已知数列${a_{n}},a_{1}=\xi ,a_{n}=xa_{n-1}+y,$求$A_{n}$
+
+解.
+$a_{n}=xa_{n-1}+y$
+
+引入$k$使 $a_{n}+k=x(a_{n-1}+k) \Rightarrow a_{n}=xa_{n-1}+(x-1)k$
+
+$\because (x-1)k=y \therefore k=\frac{y}{x-1} $
+
+$\therefore a_{n}+\frac{y}{x-1} =x(a_{n-1}+\frac{y}{x-1} )$
+
+令$b_{n}=a_{n}+\frac{y}{x-1}$
+
+则$b_{n}=xb_{n-1}$
+
+$\therefore b_{n}$为等比数列,$b_{1}=a_{1}+\frac{y}{x-1} =\xi +\frac{y}{x-1} $
+
+$\therefore b_{n}=(\xi +\frac{y}{x-1} )x^{n-1}$
+
+$\therefore a_{n}=(\xi +\frac{y}{x-1} )x^{n-1}-\frac{y}{x-1}$
+
+\subsection{因式分解}
+
+\subsubsection{完全平方公式及平方差公式}
+
+$\left(a+b\right)^2=a^2+2ab+b^2=(a-b)^2+4ab$
+
+$\left(a-b\right)^2=a^2-2ab+b^2=(a+b)^2-4ab$
+
+${a^2+b^2}=(a-b)^2+2ab=(a+b)^2-2ab=\frac{1}{2}[(a+b)^2+(a-b)^2]$
+
+$a^2-b^2=\left(a+b\right)\left(a-b\right)$
+
+$a^4-b^4=(a^2)^2-(b^2)^2=(a^2+b^2)(a+b)(a-b)$
+
+$a^8-b^8=(a-b)(a+b)(a^2+b^2)(a^4+b^4)$
+
+$x^2+(a+b)x+ab=(x+a)(x+b)$
+
+$x^2-(a+b)x+ab=(x-a)(x-b)$
+
+$ab+a+b+1=(a+1)(b+1)$
+
+$abc+ab+bc+ca+1=(a+1)(b+1)(c+1)$
+
+\subsubsection{幂项展开式}
+
+$ (a+b+c)^2=a^2+b^2+c^2+2ab+2ac+2bc$
+
+$ (a+b+c)^3=a^3+b^3+c^3+3a^2b+3a^2c+3b^2c+3ab^2+3ac^2+3bc^2+6abc$
+
+$
+(a+b+c)^4=a^4+b^4+c^4+6a^2b^2+6a^2c^2+6b^2c^2+4a^3b+4a^3c+4b^3c+4ab^3+4ac^3+4bc^3+12a^2bc+12b^2ac+12c^2ab$
+
+$(a+b+c+d)^2=a^2+2ab+b^2+2ac+2bc+c^2+2ad+2bd+2cd+d^2$
+
+$
+(a+b+c+d)^3=a^3+b^3+c^3+d^3+3a^2b+3a^2c+3a^2d+3b^2a+3b^2c+3b^2d+3c^2a+3c^2b+3c^2d+3d^2a+3d^2b+3d^2c+6abc+6abd+6acd+6bcd$
+
+\subsubsection{纯降幂降次}
+
+$a^3+b^3=(a+b)^3-3ab(a+b)$
+
+$a^4+b^4=[(a+b)^2-2ab]^2-2a^2b^2=(a^2+b^2)^2-2a^2b^2 $
+
+$a^6+b^6=(a^2+b^2)(a^4-a^2b^2+b^4)=(a^3+b^3)^2-2a^3b^3 $
+
+$a^6-b^6=(a^3+b^3)(a^3-b^3)=(a^2-b^2)(a^4+a^2b^2+b^4) $
+
+=$(a+b)(a-b)(a^2+ab+b^2)(a^2-ab+b^2)$
+
+$a^2=(a+1)(a-1)+1$
+
+$a^2+\frac{1}{a^2}=(a+\frac{1}{a})^2-2=(a-\frac{1}{a})+2$
+
+$a^3+\frac{1}{a^3}=(a+\frac{1}{a})[(a+\frac{1}{a} )^2-2]-(a+\frac{1}{a})$
+
+$a^4+\frac{1}{a^4}=(a^2+\frac{1}{a^2})^2-2=(a^3+\frac{1}{a^3})(a+\frac{1}{a})-(a^2+\frac{1}{a^2})$
+\subsubsection{非纯幂项式}
+
+$a^4+4=a^4+4a^2+4-4a^4=(a^2+2)^2-(2a)^2=(a^2+2a+2)(a^2-2a+2)$
+
+$a^4+\frac{1}{4}=(a^2+\frac{1}{2})^2-a^2=(a^2+a+\frac{1}{2})(a^2-a+\frac{1}{2})=[a(a+1)+\frac{1}{2}][a(a-1)+\frac{1}{2}]$
+
+\subsubsection{根式}
+
+$\frac{1}{\sqrt{n}}=\frac{\sqrt{n}}{n} (n> 0)$
+
+$\frac{1}{\sqrt{a}+\sqrt{b}}=\frac{\sqrt{a}-\sqrt{b}}{a-b}(a,b \ge 0,a\ne b)$
+
+$(\sqrt{a}+\sqrt{b})^2=(a+b)+2\sqrt{ab} $
+
+$\sqrt{(a+b)\pm 2\sqrt{ab}}=\sqrt{a}\pm\sqrt{b} (a> b)$
+\\
+
+例.已知三角形三边满足$(\sqrt{a}+\sqrt{b}+\sqrt{c})^2=3(\sqrt{ab}+\sqrt{ac}+\sqrt{bc})$，求此三角形的形状。
+
+解.
+$(\sqrt{a}+\sqrt{b}+\sqrt{c})^2=3(\sqrt{ab}+\sqrt{ac}+\sqrt{bc})$
+
+$\Rightarrow a+b+c-\sqrt{ab}-\sqrt{ac}-\sqrt{bc}=0$
+
+$\Rightarrow (\sqrt{a}-\sqrt{b})^2+(\sqrt{b}-\sqrt{c})^2+(\sqrt{c} -\sqrt{a} )^2=0$
+
+$\Rightarrow a=b=c$
+
+故这是个等边三角形
+
+\subsubsection{末分类}
+
+$a^{15}+a^{14}+a^{13}+\cdots +a^2+a+1=(a^8+1)(a^4+1)(a^2+1)(a+1)$
+
+$a^4+a^2+1=(a^2-a+1)(a^2+a+1)$
+
+$a^3b-ab^3+a^2+b^2+1=(a^2-ab+1)(b^2+ab+1)$
+
+$(a^2+ab+b^2)^2-4ab(a^2+b^2)=(a^2-ab+b^2)^2$
+
+\subsubsection{特殊公式}
+
+$\sqrt{n+\frac{1}{n+2}}=(n+1)\sqrt{\frac{1}{n+2}}$
+
+$\sqrt[n]{a+\frac{a}{a^n-1}}=a\sqrt[n]{\frac{a}{a^n-1}} (n> 1)$
+
+$a^2+(1-a)=a+(1-a)^2 (0< a< 1)$
+
+$\frac{a^3+b^3}{a^3+(a-b)^3}=\frac{a+b}{a+(a-b)}$
+
+$\frac{1}{1+x^{c-b}+x^{c-a}}+\frac{1}{1+x^{b-a}+x^{b-c}}+\frac{1}{1+x^{a-b}+x^{a-c}}=1$
+
+\subsubsection{整数裂项}
+
+$1\times 2+2\times 3+3\times 4+ \cdots +n(n+1)=\frac{1}{3}n(n+1)(n+2)$
+
+$1\times 2\times 3+2\times 3\times 4+3\times 4\times 5+\cdots
++n(n+1)(n+2)=\frac{1}{4}n(n+1)(n+2)(n+3)$
+
+$1\times 2\times 3\times 4+2\times 3\times 4\times 5+3\times 4\times 5\times 6+ \cdots
++n(n+1)(n+2)(n+3)=\frac{1}{5}n(n+1)(n+2)(n+3)(n+4)$
+
+\subsubsection{分数裂项}
+
+$\frac{1}{n(n+1)} =\frac{1}{n} -\frac{1}{n+1}$
+
+$\frac{1}{n(n+k)} =\frac{1}{k} (\frac{1}{n}-\frac{1}{n+k})$
+
+$\frac{k}{n(n+k)} =\frac{n+k-n}{n(n+k)} =\frac{1}{n}-\frac{1}{n+k}$
+
+$\frac{1}{n(n+1)(n+2)} =\frac{1}{2} [\frac{1}{n(n+1)} -\frac{1}{(n+1)(n+2)} ]$
+
+$\frac{1}{(2n+1)(2n-1)} =\frac{1}{2} (\frac{1}{2n-1} -\frac{1}{2n+1} )=\frac{1}{4n^2-1}$
+
+$\frac{1}{1\times 2} +\frac{1}{2\times 3} +\cdots +\frac{1}{n(n+1)} =\frac{n}{n+1}$
+
+$\frac{1}{1\times 2\times 3} +\frac{1}{2\times 3\times 4} +\cdots +\frac{1}{n(n+1)(n+2)}
+=\frac{1}{4} -\frac{1}{2(n+1)(n+2)}$
+
+$\frac{1}{1\times 2\times 3\times 4} +\frac{1}{2\times 3\times 4\times 5} +\cdots
++\frac{1}{n(n+1)(n+2)(n+3)}=\frac{1}{18} -\frac{1}{3(n+1)(n+2)(n+3)}$
+
+\subsubsection{基本代数式}
+
+$(a^2+b^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$
+
+\subsubsection{二次项含参分解式}
+
+$ax^2+bx+c=mnx^2+(ms+nr)x+rs=(mx+r)(nx+s)$
+
+\subsubsection{轮换式}
+
+1.$a^2+b^2+c^2=(a+b+c)^2-2(ab+bc+ac)$
+
+=$\frac{1}{2}[(a-b)^2+(b-c)^2+(c-a)^2]+ab+bc+ac$
+
+2.$a^3+b^3+c^3-3abc=(a+b+c)(a^2+b^2+c^2-ab-bc-ac)$
+
+特殊：当$a+b+c=0$时，$a^3+b^3+c^3=3abc$
+
+$a^4+b^4+c^4=(a^2+b^2+c^2)^2-2(a^2b^2+b^2c^2+a^2c^2)$
+
+$=(a^2+b^2+c^2)^2-2[(ab+bc+ac)^2-2(abc^2+bca^2+cab^2)]$
+
+$=(a^2+b^2+c^2)^2-2[(ab+bc+ca)^2-2abc+(a+b+c)]$
+
+$(a+b)^3+(b+c)^3+(a+c)^3+a^3+b^3+c^3=3(a+b+c)(a^2+b^2+c^2)$
+
+$a(b-c)^3+b(c-a)^3+c(a-b)^3=(a-b)(b-c)(c-a)(a+b+c)$
+
+$\frac{1}{b+c}(\frac{c}{b}-\frac{b}{c})+\frac{1}{a+c}(\frac{a}{c}
+-\frac{c}{a})+\frac{1}{a+b}(\frac{b}{a}-\frac{a}{b})=0$
+
+$(a+b+c)^3-a^3-b^3-c^3=3(a+b)(a+c)(b+c)$
+
+$a^2(b+c)+b^2(c+a)+c^2(a+b)-a^3-b^3-c^3-2abc=
+(a+b-c)(a-b+c)(-a+b+c)$
+
+$(ab+bc+ca)(a+b+c)-abc=(a+b)(b+c)(c+a)$
+
+$a^3(b-c)+b^3(c-a)+c^3(a-b)=-(a+b+c)(a-b)(b-c)(c-a)$
+
+$a^3(b^2-c^2)+b^3(c^2-a^2)+c^3(a^2-b^2)=
+-(a-b)(b-c)(c-a)(ab+bc+ca)$
+
+$(a+b+c)^4-(b+c)^4-(c+a)^4-(a+b)^4+a^4+b^4+c^4=
+12abc(a+b+c)$
+
+$(a+b+c)^5-(b+c-a)^5-(c+a-b)^5-(a+b-c)^5=
+80abc(a^2+b^2+c^2)$
+
+$(b-c)^6+(c-a)^6+(a-b)^6-3(a-b)^2(b-c)^2(c-a)^2
+=2(a^2+b^2+c^2-bc-ca-ab)^3$
+
+$(a+b)^7-a^7-b^7=7ab(a+b)(a^2+ab+b^2)^2$
+
+$(a+b+c)^3+(b+c-a)(c+a-b)(a+b-c)=
+4a^2(b+c)+4b^2(c+a)+4c^2(a+b)+4abc$
+
+$a^3(b+c-a)^2+b^3(c+a-b)^2+c^3(a+b-c)^2+abc(a^2+b^2+c^2)+(a^2+b^2+c^2-ab-bc-ca)(b+c-a)(c+a-b)(a+b-c)=
+2abc(ab+bc+ca)$
+
+$(b-c)^3+(c-a)^3+(a-b)^3=3(a-b)(b-c)(c-a)$
+
+$(a+b)^4+a^4+b^4=2(a^2+ab+b^2)$
+
+$(a^2+ab+b^2)^2-4ab(a^2+b^2)=(a^2-ab+b^2)^2$
+
+$(a+b)(b+a)(c+a)+abc=(a+b+c)(ab+bc+ca)$
+
+$(ab+1)(a+1)(b+1)+ab=(ab+a+1)(ab+b+1)$
+
+$2a^2b^2c^2+(a^3+b^3+c^3)abc+a^3b^3+b^3c^3+c^3a^3=(a^2+bc)(b^2+ca)(c^2+ab)$
+
+$abc(a^3+b^3+c^3)-b^3c^3-c^3a^3-a^3b^3=(a^2-bc)(b^2-ca)(c^2-ab)$
+
+$2a^2b^2+2a^2c^2+2b^2c^2-a^4-b^4-c^4=(a+b+c)(a+b-c)(c+a-b)(c-a+b)$
+
+$(a+b+c)^3-(b+c-a)^3-(c+a-b)^3-(a+b-c)^3=24abc$
+
+$a^4+b^4+c^4-2b^2c^2-2c^2a^2-2a^2b^2=(a+b+c)(a-b-c)(b-c-a)(c-a-b)$
+
+$(b-c)^5+(c-a)^5+(a-b)^5=5(a-b)(b-c)(c-a)(a^2+b^2+c^2-ab-bc-ca)$
+
+$a^2b^2+2a^2b+2ab^2+a^2+b^2+3ab+a+b=(a+1)(b+1)(ab+a+b)$
+
+$a^4+b^4+c^4+1+8abc-2(a^2b^2+b^2c^2+c^2a^2+a^2+b^2+c^2)
+=(a+b+c+1)(a-b-c+1)(a+b-c-1)(a-b+c-1)$
+
+$(ab-c^2)(ac-b^2)+(bc-a^2)(ba-c)^2+(ca-b^2)(cb-a^2)
+=(bc+ca+ab)(bc+ca+ab-a^2-b^2-c^2)$
+
+$a^2(b+c-2a)+b^2(c+a-2b)+c^2(a+b-2c)+2(c^2-a^2)(c-b)+2(a^2-b^2)(a-c)+2(b^2-c^2)(b-a)
+=-3(a-b)(b-c)(c-a)$
+
+$(b^2-c^2)(1+ab)(1+ac)+(c^2-a^2)(1+bc)(1+ba)+(a^2-b^2)(1+ca)(1+cb)=(b-c)(c-a)(a-b)(abc+a+b+c)$
+
+已知a,b,c是互不相等的实数,则$\frac{bc}{(a-b)(a-c)} +\frac{ac}{(b-a)(b-c)} + \frac{ab}{(c-a)(c-b)} =1$
+\\
+
+例.证明：四个相邻正整数的乘积与1的和一定是完全平方数
+
+证明：$n(n+1)(n+2)(n+3)+1$
+
+$=[n(n+3)][(n+1)(n+2)]+1$
+
+$=(n^2+3n)(n^2+3n+2)+1$
+
+$=(n^2+3n)^2+2(n^2+3n)+1$
+
+$=(n^2+3n+1)^2$
+
+\subsection{不等式}
+
+\subsubsection{基本性质}
+
+互递性：如果$a> b$,那么$b< a$
+
+传递性：如果$a> b$,$b> c$,那么$a> c$
+
+可加性：如果$a> b$,$c> d$,那么$a+c> b+d$
+
+可乘性：如果$a> b> 0$,$c> d> 0$，那么$ac> bd> 0$
+
+倒数性：如果$a> b> 0$，那么$\frac{1}{a} < \frac{1}{b}$
+
+\subsubsection{若$a> b$，则有}
+
+$a\pm c> b\pm c$
+
+$ac> bc(c> 0)$;$ac< bc(c< 0)$
+
+$\frac{a}{c} > \frac{b}{c} (c> 0)$;$\frac{a}{c}< \frac{b}{c}(c< 0)$
+
+$\sqrt[n]{a}  > \sqrt[n]{b} (n \in \mathbb{Z} \text {且} a,b> 0)$
+
+$a^n> b^n(b> 0,n> 0);a^n< b^n(b> 0,n< 0)$
+
+$c^a< c^b(0< c< 1);c^a=c^b(c=1);c^a> c^b(c> 1)$
+
+\subsubsection{图像}
+
+若$a< b$，则:
+
+$\left\{\begin{matrix}
+ x & >  &a\\
+ x & >  &b
+\end{matrix}\right.\Leftrightarrow x> b$   同大取大 \qquad  $\left\{\begin{matrix}
+ x & <  &a \\
+ x & <  &b
+\end{matrix}\right.\Leftrightarrow x< a$   同小取小
+
+$\left\{\begin{matrix}
+ x & >  &a \\
+ x & <  &b
+\end{matrix}\right.\Leftrightarrow a< x< b$   大小中间找 \qquad $\left\{\begin{matrix}
+ x & <  &a \\
+ x & >  &b
+\end{matrix}\right.\Leftrightarrow x\in  \varnothing$  小大找不着
+
+\subsubsection{解不等式$ax >b$}
+
+$a > 0$,则$x> \frac{b}{a}$
+ 
+$a< 0$,则$x< \frac{b}{a} $
+
+$a=0$且$b< 0$,则解集为$x\in \mathbb{R}$
+
+$a=0$且$b\ge 0$,则无解:$x\in \varnothing$ 
+
+\subsubsection{一组不等式}
+
+$\left\{\begin{matrix}
+ x & \le  &a \\
+ x & \ge  &a
+\end{matrix}\right.\Leftrightarrow    x=a$
+
+$\left\{\begin{matrix}
+ x & >  &a \\
+ x & <  &a
+\end{matrix}\right.\Leftrightarrow$   无解：$x\in \varnothing$ 
+
+\subsubsection{基本不等式}
+
+一些数的算术平均数大于或等于这些数的几何平均数，即:
+$\frac{S_{1}+S_{2}+\cdots +S_{n}}{n}  \ge \sqrt[n]{S_{1}\times S_{2}\times \cdots \times S_{n}}$ 
+
+\subsubsection{绝对值与不等式}
+
+1.简单绝对值
+$\left | a \right | =
+\begin{cases}a(a> 0)
+ \\a(a=0)
+ \\-a(a< 0)
+
+\end{cases}$
+
+$\left | a \right | ^2=\left | a^2 \right | =a^2$
+
+$\left | ab \right | =\left | a \right | \times \left | b \right | $
+
+$\left | \frac{a}{b}  \right | =\frac{\left | a \right | }{\left | b \right | } (b\ne 0)$
+
+$-\left | a \right | \le a\le \left | a \right | $
+
+2.解绝对值不等式
+
+如果$a> 0$,$\left | x \right | < a$,则$-a< x< a$
+
+如果$a> 0$,$\left | x \right | > a$,则$x< -a$或$x> a$
+
+如果$\left | x \right | \ge x$,那么解集为$x\in \mathbb{R}$
+
+3.绝对值中的最值
+
+求下列式子的最小值:$\left | x-a_{1} \right | +\left | x-a_{2} \right | +\left | x-a_{3} \right |+\cdots
++\left | x-a_{n} \right |$
+
+解.
+
+$\begin{cases}
+n=2k+1 (k \in \mathbb{Z})& \text{$x$取$a_{\text{中}}$ } \\
+n=2k (k \in \mathbb{Z})& \text{ $x$为中间两个$a$之间的任意数 } 
+\end{cases}$
+
+\subsubsection{三角不等式}
+
+1.三角不等式
+
+$\left | a \right | -\left | b \right | \le \left | a\pm b \right | \le \left | a \right |+\left |
+b \right |$
+
+$\left | a-b \right | +\left | b-c \right | \ge \left | a-c \right |$
+
+$\left | a+b \right | +\left | b+c \right | \ge \left | a-c \right |$ 
+
+向量三角不等式，对于任意a,b均有:$\left | \left | \overrightarrow{a} \right |-\left | \overrightarrow{b} \right |
+\right |\le \left | \overrightarrow{a} \pm \overrightarrow{b} \right |\le \left |
+\overrightarrow{a} \right |+ \left | \overrightarrow{b} \right |$
+
+2.三角不等式的性质
+
+若$\left | a \right | -\left | b \right | =\left | a+b \right |$,则$ab\le 0\text{且}\left |  a \right |\ge
+\left | b \right |$
+
+若$\left | a \right | -\left | b \right | =\left | a-b \right |$ ,则$ab\ge 0\text{且}\left | a \right |\ge
+\left | b \right |$
+
+若$\left | a+b \right | =\left | a \right | +\left | b \right |$ ,则$ab\ge 0$
+
+若$\left | a-b \right | =\left | a \right | +\left | b \right |$,则$ab\le 0$
+
+若$\left | a \right | -\left | b \right | =\left | a\pm b \right | =\left | a \right |+\left | b
+\right |$,则$ab=0$
+
+\subsubsection{平方不等式}
+
+设$x_{i}$ 是正数，则:
+$\frac{x_{1}^2 }{x_{2}} +\frac{x_{2}^2 }{x_{3}} +\cdots
++\frac{x_{n-1}^2}{x_{n}}+\frac{x_{n}^2}{x_{1}}\ge x_{1}+x_{2}+\cdots +x_{n}$
+
+\subsection{应用问题：行程、行船与溶液}
+\subsection{幻方}
+\subsection{星期运算}
+
+知道年、月、日即可算出星期几， 这里提供一种方法。\quad [\quad]：取整
+
+步骤：
+
+1.$f=[\frac{14- \text{月}}{2}]$\qquad $y=$年$-f$\qquad $m=$月$+12f-2$
+
+2.$A=$日$+y+[\frac{31m}{12}]+[\frac{y}{4}]-[\frac{y}{100}]+[\frac{y}{400}]$
+
+3.取$\frac{A}{7}$的余数P
+
+4.
+
+\begin{table}[H]
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+P  & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline
+星期 & 日 & 一 & 二 & 三 & 四 & 五 & 六 \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{排列组合}
+
+\subsubsection{计数原理}
+一、阶乘
+
+1.$n!$表示从n乘到1，即$n!= \displaystyle \prod_{i=1}^{n}i=n\times (n-1)\times (n-2)\times \dots \times 2\times1 $
+
+2.规定$0!=1$(就是规定，无需推导)
+
+4.$n\times n!=(n+1)!-n!$
+
+二、考虑顺序的计数
+
+从$n$组$m$个数$1,2,3,\cdots ,m$中选一个$n$位数($\overline{ab}$,$\overline{ba}$各算一种)，可选$m^n$个
+
+三、不考虑顺序计数
+
+从$n$组$m$个数$1,2,3,\cdots,m$中选$n$个数($\overline{ab}$,$\overline{ba}$算一种)，可选$\frac{(n+m-1)!}{n!(m-1)!}$个
+
+\subsubsection{排列}
+
+即抽取后排列,从n个供选择元素中选取m个元素进行排列
+
+$A_{n}^{m} (n> m)=\frac{n!}{(n-m)!}=n(n-1)(n-2)(n-3)\cdots(n-m+1)$
+
+也可解释为：从$n$往下乘$m$个数
+
+\subsubsection{组合}
+
+即抽取，从$n$个供选择元素中选取$m$个元素，不进行排列
+
+由$C_{n}^{m} A_{m}^{m} =A_{n}^{m}$得出：
+$C_{n}^{m} =\frac{A_{n}^{m} }{A_{m}^{m} } =\frac{A_{n}^{m} }{m!}=\frac{n!}{m!(n-m)!} $
+
+\subsubsection{排列组合公式}
+
+$A_{n}^{0} =1$
+
+$A_{n}^{n} =n!$
+
+$C_{n}^{m} =C_{n}^{n-m} $
+
+$C_{n}^{0} =C_{n}^{n} =1$
+
+$C_{n+1}^{m} =C_{n}^{m} +C_{n}^{m-1} $
+
+$C_{n-1}^{r-1} +C_{n-1}^{r} =C_{n}^{r} (r=1,2,\cdots ,n)$
+
+$0=(1-1)^n=1-C_{n}^{1} +C_{n}^{2} -\cdots +(-1)^{n-1}C_{n}^{n-1}+(-1)^n$
+
+$-\frac{1}{x-1} C_{n}^{1} +\frac{2}{x-2} C_{n}^{2} +\cdots +(-1)^n\times \frac{n}{x-n}
+C_{n}^{n}=\frac{(-1)^n\times n!}{(x-1)(x-2)\cdots (x-n)} $
+
+$1-x+\frac{x(x-1)}{2!} -\frac{x(x-1)(x-2)}{3!} +\cdots +(-1)^n\times \frac{x(x-1)\cdots
+(x-n+1)}{n!}=(-1)^n\times \frac{(x-1)(x-2)\cdots (x-n)}{n!}$
+\\
+
+例一.从$0-9$这十个数字中任选3个奇数和2个偶数
+
+（1）可以组成多少个没有重复数字的五位数？
+
+（2）可以组成多少个没有重复数字的五位数的偶数？
+
+解.（1）法一(间接求):$C_{5}^{3} C_{5}^{2} A_{5}^{5} -C_{5}^{3} C_{4}^{1} A_{4}^{4}=11040$
+
+法二(直接求)$\left.\begin{matrix} \text{有}0 \quad C_{5}^{3} C_{4}^{1} A_{4}^{1}A_{4}^{4}  
+\\\text{无}0 \quad C_{5}^{3} C_{4}^{2} A_{5}^{5} 
+\end{matrix}\right\}=11040$
+
+（2）$\left\{\begin{matrix} \text{有}0\quad C_{5}^{3} C_{4}^{1} \left\{\begin{matrix} 0\text{在末}\quad
+A_{4}^{4}
+ \\ 0\text{不在末}\quad C_{3}^{1} A_{3}^{3} 
+\end{matrix}\right.
+ \\
+\text{无}0\quad C_{5}^{2} C_{4}^{2} A_{5}^{2} A_{4}^{4} 
+\end{matrix}\right.$
+\\
+
+例二.在一个圆周上有$10$个不同的点，可连成多少条线，这些直线在圆内最多有几个交点？
+
+解.（1）$C_{10}^{2} =45$
+
+（2）因为4个点中只有一个交点在圆内，所以 $C_{10}^{4}=210 $
+\\
+
+例三.五个人会排版，四个人会印刷，三个人都会，要选四个排版，四个印刷，有多少种选法？
+
+解.$\left\{\begin{matrix} \text{都会的人都不选}C_{5}^{4} C_{4}^{4} 
+ \\\text{都会的人选一个}C_{3}^{1}(C_{5}^{3}C_{4}^{4}+C_{5}^{4}C_{4}^{3}    ) 
+ \\\text{都会的人选二个}C_{3}^{2} \left\{\begin{matrix} \text{一排版一印刷} C_{2}^{1} C_{5}^{3}C_{4}^{3}
+ \\\text{二排版}C_{5}^{2}C_{4}^{4}
+ \\\text{二印刷}C_{5}^{4}C_{4}^{2}
+\end{matrix}\right.
+ \\\text{都会的人选三个}\left\{\begin{matrix} \text{都排版}C_{5}^{1}C_{4}^{4}
+ \\\text{都印刷}C_{5}^{4}C_{4}^{1}
+ \\\text{一排版二印刷}C_{3}^{1}C_{5}^{3}C_{4}^{2}
+ \\\text{二排版一印刷}C_{3}^{1}C_{5}^{2}C_{4}^{3}
+\end{matrix}\right.
+\end{matrix}\right.$
+\\
+
+例四.从$0-5$这六个数字中任取两个奇数和两个偶数，组成没有重复数字的四位数有多少种？
+
+解.$C_{3}^{1} C_{2}^{1} C_{3}^{1} A_{3}^{3} +C_{3}^{1} C_{2}^{2} A_{4}^{4}=180$
+\\
+
+例五.有六本不同的书，按1:1:2:2分成4堆，有多少种不同的分法？
+
+解：解法一：
+$C_{6}^{2} \times \frac{C_{4}^{2} }{A_{2}^{2} } \times \frac{C_{2}^{1} }{A_{2}^{2} }=45$
+
+解法二：
+$\frac{C_{6}^{2} C_{4}^{2} }{A_{2}^{2} } =45$
+\\
+
+例六.将五位志愿者分成三组，其中两组各两人，另一组一人，分赴世博会的三个不同场馆服务，共有多少种分配方案？
+
+解.$\frac{C_{5}^{2} C_{3}^{2} }{A_{2}^{2} } \times A_{3}^{3}=90 $
+\\
+
+例七.七名师生站成一排拍照留念，其中老师一人，男生四人，女生二人，在下列情况中，各有不同站法多少种？
+
+(1)两名女生必须相邻  
+
+(2)四名男生互不相邻  
+
+(3)若四名男生身高都不等，按从高到低的顺序站  
+
+(4)老师不站中间，且女生不站两端
+
+解：$(1)A_{6}^{6} A_{2}^{2}=1440 $
+
+$(2)A_{4}^{4} A_{3}^{3} =144$
+
+$(3)A_{7}^{7} {\div} A_{4}^{4} \times 2=420$
+
+$(4)$ 解法一.$\left\{\begin{matrix} \text{女在中}\quad C_{2}^{1} C_{4}^{1}A_{5}^{5}  
+ \\ \text{女不在中}\quad A_{4}^{2} C_{4}^{1}A_{4}^{4}  
+\end{matrix}\right.$ \quad 解法二.$\left\{\begin{matrix} \text{师不在两头}\quad C_{4}^{1} A_{4}^{2}
+A_{4}^{4}
+ \\ \text{师在一头}\quad C_{2}^{1} C_{4}^{1} A_{5}^{5}  
+\end{matrix}\right.$
+
+两者结果都是2112种
+\\
+
+例八.某城市的街道如图，某人要从左上角的A地前往右下角的B地，则路程最短的走法共有多少种？
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|}
+\hline
+ &  &  \\ \hline
+ &  &  \\ \hline
+\end{tabular}
+\end{table}
+
+解:有三种方法  $\frac{A_{5}^{5} }{A_{2}^{2} A_{3}^{3} } =C_{5}^{2} =C_{5}^{3}=10$
+\\
+
+例九.男女学生共8人，从男生中选两人，从女生中选一人，共有三十种不同的选法，求女生人数
+
+解:设男生x人，女生$(8-x)$人，则:$C_{x}^{2} \times C_{8-x}^{1} =30$
+
+$\therefore \frac{A_{x}^{2} }{2} \times \frac{A_{8-x}^{1} }{1}=30,A_{x}^{2} \times A_{8-x}^{1}
+=60,$
+
+$\therefore x(x-1)(8-x)=60,$
+
+解得$x_{1} =6,x_{2} =5,x_{3} =-2$
+
+$\therefore $ 女生有2人或3人
+
+\subsection{降幂定理与杨辉三角}
+
+\subsubsection{二项式定理}
+
+
+1.$(a+b)^{n}$的展开式共有$(n+1)$项
+
+其中奇数项的二次项系数的和，等于偶数项的二次项系数的和等于$2^{n-1}$,
+
+即$C_{n}^{0} +C_{n}^{2} +C_{n}^{4} +\cdots =C_{n}^{1}
++C_{n}^{3}+C_{n}^{5} +\cdots =2^{n-1}$
+
+所有项的二次项系数的和等于$2^{n}$，
+
+即：$C_{n}^{0} +C_{n}^{1} +\cdots +C_{n}^{n} =2^{n}$
+
+$(a+b)^{n}=\displaystyle \sum_{i=1}^{n} C_{n}^{i} a^{i}b^{n-i}=C_{n}^{0} a^{n}+C_{n}^{1} a^{n-1}b+C_{n}^{2} a^{n-2}b^{2}+\cdots +C_{n}^{k} a^{n-k}b^{k}+\cdots
++C_{n}^{n} b^{n}$
+
+2.如果要求$(a-b)^n$,把$b$换做$-b$即可
+
+3.$(a\pm b)^3=(a\pm b)(a^{2}\mp 2ab+b^{2})=a^{3}\pm 3a^{2}b+3ab^{2}\pm b^{2}$
+
+$(a+b)^{4}=a^{4}+4a^{3}b+6a^{2}b^{2}+4ab^{3}+b^{4}$
+
+$(a+b)^{5}=a^{5}+5a^{4}b+10a^{3}b^{2}+10a^{2}b^{3}+5ab^{4}+b^{5}$
+\\
+
+例一：$(1-x)^{10}$的展开式中$x^{3}$项的系数是多少？
+解：$-C_{10}^{3} =-120$
+\\
+
+例二：已知$(1+x)^n=a_{0} +a_{1} x+a_{2} x^{2} +\cdots +a_{n} x^{n} $,若$a_{0} +a_{1} +a_{2} +\cdots
++a_{n} =16$,求$n$
+
+解：
+
+法一：令$x=1$,得出$n=4$
+
+法二：由二项式定理，得$2^{n} =16$,所以$ n=4$
+
+
+\subsubsection{幂的和差}
+
+$a^{n} +b^{n} =(a+b)(a^{n-1} -a^{n-2} b-a^{n-3} b^{2} -a^{n-4}b^{3} -\cdots -ab^{n-2} +b^{n-1} )$
+($n=2k+1,k\in \mathbb{Z}$时成立)
+
+$a^{n} -b^{n} =(a-b)(a^{n-1} +a^{n-2} b+a^{n-3} b^{2} +a^{n-4}b^{3} +\cdots +ab^{n-2} +b^{n-1} )$
+
+$a^{3} \pm b^{3} =(a\pm b)(a^{2} \mp ab+b^{2} )=a^{3} \mp a^{2}b+ab^{2}\pm a^{2} b -ab^{2}\pm
+b^{3} $
+
+$(a+b)^{3} =a^{3} +3a^{2} b+3ab^{2} +b^{3} =a^{3} +b^{3} +3ab(a+b)$
+
+$(a-b)^{3} =a^{3} -3a^{2} b+3ab^{2} -b^{3} =a^{3} -b^{3} -3ab(a-b)$
+
+$a^{3} +b^{3} =(a+b)^{3} -3ab(a+b)$
+
+$a^{3} -b^{3} =(a-b)^{3} +3ab(a-b)$
+
+\newpage
+
+\subsection{多元一次方程组}
+\subsection{复数}
+\subsection{黄金分割}
+\subsection{二次函数}
+\subsection{三次方程}
+\subsection{四次方程}
+\subsection{多项式}
+\subsection{导数}
+\subsection{拉格朗日插值定理}
+\subsection{差分}
+\subsection{单位}
+\subsection{物理}
+\subsection{字母频率表}
+\subsection{向量}
+\subsection{均值不等式}
+\subsection{柯西不等式}
+
+\newpage
+
+\section{几何} 
+
+\subsection{几何初步}
+\subsection{直线与坐标}
+\subsection{正多边形与体}
+\subsection{圆与球}
+\subsection{高级公式}
+\subsection{维维安尼定理}
+\subsection{四面体体积}
+\subsection{托勒密定理}
+\subsection{四点共圆}
+\subsection{圆幂定理}
+\subsection{凸四边形不等式}
+
+
+\section{基础三角}
+
+\subsection{勾股定理}
+\subsection{中线定理}
+\subsection{角平分线定理}
+\subsection{梅涅劳斯定理与塞瓦定理}
+\subsection{射影定理}
+\subsection{心}
+\subsection{欧拉定理}
+\subsection{三角形面积}
+
+\newpage
+
+\section{三角}
+
+\subsection{定义}
+\subsection{函数图像}
+\subsection{概述}
+\subsection{三角与圆}
+\subsection{诱导公式}
+\subsection{基础知识}
+\subsection{转化公式}
+\subsection{特殊角}
+\subsection{特殊三角形}
+\subsection{解三角形}
+\subsection{相关定理}
+\subsection{三角恒等式}
+\subsection{正弦不等式}
+\subsection{三角射影不等式}
+\subsection{中线公式与角平分线公式}
+\subsection{中线等式与高线等式}
+\subsection{解等腰三角形}
+\subsection{解直角三角形}
+\subsection{三角形中成立的公式}
+\subsection{证明三角恒等式}
+
+\end{document}
